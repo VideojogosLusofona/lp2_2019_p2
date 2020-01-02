@@ -58,16 +58,17 @@ na consola nem de som.
 
 O jogo deve no mínimo fazer uso das seguintes técnicas:
 
-*   Ter como base de implementação o [Game Loop][] e o [Update Method][].
-*   Ter (pelo menos) duas *threads*: a *thread* principal do jogo (que executa
-    o *game loop*) e uma *thread* para ler *input* do utilizador.
+* Ter como base de implementação o [Game Loop] e o [Update Method]. O
+  [Component Pattern] poderá ser essencial para uma boa organização do código.
+* Ter (pelo menos) duas *threads*: a *thread* principal do jogo (que executa
+  o *game loop*) e uma *thread* para ler *input* do utilizador.
 
 O jogo deve ainda:
 
-*   Implementar as mecânicas base do jogo original.
-*   Ser jogável e ter algum tipo de pontuação.
-*   Ter algum tipo de ecrã inicial ou opção no menu onde sejam explicadas as
-    regras e indicados os controlos do jogo.
+* Implementar as mecânicas base do jogo original.
+* Ser jogável e ter algum tipo de pontuação.
+* Ter algum tipo de ecrã inicial ou opção no menu onde sejam explicadas as
+  regras e indicados os controlos do jogo.
 
 <a name="orgclasses"></a>
 
@@ -79,8 +80,8 @@ e/ou enumerações, consoante seja mais apropriado. Cada tipo (i.e., classe,
 exemplo, uma classe chamada `Game` deve ser colocada no ficheiro `Game.cs`. Por
 sua vez, a escolha da coleções e *design patterns* também deve ser adequada a
 cada situação. Serão previligiadas soluções que tenham em consideração bons
-princípios de design de classes, como é o caso dos princípios [SOLID][]. Estes
-*patterns* e princípios devem ser balanceados com o princípio [KISS][], crucial
+princípios de design de classes, como é o caso dos princípios [SOLID]. Estes
+*patterns* e princípios devem ser balanceados com o princípio [KISS], crucial
 no desenvolvimento de qualquer sistema.
 
 <a name="objetivos"></a>
@@ -152,7 +153,7 @@ não comparecerem na discussão, a nota final será zero.
 ## Entrega
 
 O projeto deve ser entregue por **grupos de 2 a 3 alunos** via Moodle até às
-23h de 5 de janeiro de 2020. Deve ser submetido um ficheiro `zip` com a
+23h de 7 de janeiro de 2020. Deve ser submetido um ficheiro `zip` com a
 solução completa do projeto, nomeadamente:
 
 * Pasta escondida `.git` com o repositório Git local do projeto.
@@ -247,3 +248,4 @@ Este enunciado é disponibilizado através da licença [CC BY-NC-SA 4.0][].
 [Spacewar!]:https://en.wikipedia.org/wiki/Spacewar!
 [Game Loop]:http://gameprogrammingpatterns.com/game-loop.html
 [Update Method]:http://gameprogrammingpatterns.com/update-method.html
+[Component Pattern]:https://gameprogrammingpatterns.com/component.html
